@@ -1,41 +1,21 @@
-/* Pseudo Classes */
-
-a:link {
-    color: red;
+p::first-letter {
+    color: darkgoldenrod;
 }
 
-a:visited {
-    color: blueviolet;
-    font-size: 24px;
+p {
+    font-size: 25px;
 }
 
-a:active {
-    color: coral;
-    font-size: 50px;
-}
-
-/* Capitalise when you hover the text */
-
-a:hover {
-    text-transform: uppercase;
-}
-
-/* Apply formatting to the even child using pseduo classes */
-
-div.even ul li:nth-child(even){
-    text-decoration: underline;
-    font-weight: bold;
-    color: red;
-}
-
-div.odd ul li:nth-child(odd){
-    text-decoration: underline;
-    font-weight: bold;
+p::first-line {
     color: blue;
 }
 
-div.three ul li:nth-child(3n){
-    text-decoration: underline;
-    font-weight: bold;
-    color: orange;
+h1::before {
+    content: "'";
+    background-color: aqua
+}
+
+h1::after {
+    content: "'";
+    background-color: chartreuse;
 }
