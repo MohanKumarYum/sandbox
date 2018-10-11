@@ -1,0 +1,15 @@
+/* Descendant Combinator */
+
+ul li a {
+    text-transform: capitalize;
+}
+
+/* 2nd li is a descendant of li [Parent/Ancestor] */
+
+li li {
+    list-style-type: decimal-leading-zero;
+}
+
+li {
+    list-style-type: circle;
+}
