@@ -1,15 +1,41 @@
-/* Descendant Combinator */
+/* Pseudo Classes */
 
-ul li a {
-    text-transform: capitalize;
+a:link {
+    color: red;
 }
 
-/* 2nd li is a descendant of li [Parent/Ancestor] */
-
-li li {
-    list-style-type: decimal-leading-zero;
+a:visited {
+    color: blueviolet;
+    font-size: 24px;
 }
 
-li {
-    list-style-type: circle;
+a:active {
+    color: coral;
+    font-size: 50px;
+}
+
+/* Capitalise when you hover the text */
+
+a:hover {
+    text-transform: uppercase;
+}
+
+/* Apply formatting to the even child using pseduo classes */
+
+div.even ul li:nth-child(even){
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+}
+
+div.odd ul li:nth-child(odd){
+    text-decoration: underline;
+    font-weight: bold;
+    color: blue;
+}
+
+div.three ul li:nth-child(3n){
+    text-decoration: underline;
+    font-weight: bold;
+    color: orange;
 }
